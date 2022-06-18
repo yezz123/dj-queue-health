@@ -33,7 +33,7 @@ jobs:
         if: steps.cache.outputs.cache-hit != 'true'
         run: flit install --symlink
       - name: Lint
-        if:  ${{ matrix.python-version != '3.7' }}
+        if:  ${{ matrix.python-version != '3.8' }}
         run: pre-commit run --all-files
       - name: Test
         run: pytest
