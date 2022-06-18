@@ -1,4 +1,4 @@
-# dj-queue-health
+# dj-queue-health  - [![framework](https://img.shields.io/badge/Framework-Django-green?style)](https://www.djangoproject.com/)
 
 Simple django app for checking queue health. Targeted to be used for Kubernetes deployments to periodically schedule `update_queue_timestamp` and set timestamp and verified by `test_queue_health` as a probe to verify if worker works and is not stacked.
 
